@@ -1575,7 +1575,11 @@ html, body {
     }
 }
 
-@media (max-width: 768px) {
+body.menu-open {
+    overflow: hidden !important;
+}
+
+@media (max-width: 992px) {
     .container {
         padding: 0 1.25rem;
     }
@@ -1597,17 +1601,21 @@ html, body {
     }
 
     .brand-logo .logo-badge {
-        font-size: 1.05rem;
-        padding: 0.15rem 0.5rem;
+        font-size: 1rem;
+        padding: 0.15rem 0.45rem;
     }
 
     .brand-logo .logo-text {
-        font-size: 1.2rem;
+        font-size: 1.15rem;
+    }
+
+    .nav-actions {
+        gap: 0.75rem;
     }
 
     .nav-actions .btn-primary {
-        padding: 0.45rem 0.9rem;
-        font-size: 0.82rem;
+        padding: 0.45rem 0.85rem;
+        font-size: 0.8rem;
     }
 
     .nav-menu {
@@ -1616,15 +1624,18 @@ html, body {
         left: 0;
         width: 100%;
         height: calc(100vh - 64px);
-        background-color: var(--bg-dark);
+        background-color: var(--bg-card);
         flex-direction: column;
         justify-content: flex-start;
-        padding: 3rem 1.5rem;
-        gap: 1.5rem;
+        align-items: center;
+        padding: 2.5rem 1.5rem;
+        gap: 1.25rem;
         overflow-y: auto;
         transform: translateX(100%);
         transition: transform var(--transition-normal);
         z-index: 999;
+        border-top: 2px solid var(--brand-red);
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8);
     }
 
     .nav-menu.open {
@@ -1632,11 +1643,17 @@ html, body {
     }
 
     .nav-link {
-        font-size: 1.25rem;
+        font-size: 1.2rem;
         width: 100%;
         text-align: center;
-        padding: 0.5rem 0;
+        padding: 0.75rem 0;
         border-bottom: 1px solid var(--border-color);
+        color: var(--text-primary);
+        font-weight: 700;
+    }
+
+    .nav-link.active, .nav-link:hover {
+        color: var(--brand-red);
     }
 
     .mobile-toggle {
@@ -1652,6 +1669,7 @@ html, body {
     .mobile-toggle.active span:nth-child(3) {
         transform: translateY(-8px) rotate(-45deg);
     }
+}
 
     .hero-section {
         padding: 2.5rem 0 3.5rem 0;

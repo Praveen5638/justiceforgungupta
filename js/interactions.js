@@ -62,6 +62,7 @@ function initNavigation() {
             const isOpen = navMenu.classList.toggle('open');
             mobileToggle.classList.toggle('active', isOpen);
             mobileToggle.setAttribute('aria-expanded', isOpen);
+            document.body.classList.toggle('menu-open', isOpen);
         });
 
         navLinks.forEach(link => {
@@ -69,6 +70,7 @@ function initNavigation() {
                 navMenu.classList.remove('open');
                 mobileToggle.classList.remove('active');
                 mobileToggle.setAttribute('aria-expanded', false);
+                document.body.classList.remove('menu-open');
             });
         });
     }
