@@ -1838,21 +1838,139 @@ body.menu-open {
     }
 }
 
-@media (max-width: 480px) {
+/* Mobile & Phone Responsive Optimizations (<576px and <380px) */
+@media (max-width: 576px) {
     .container {
         padding: 0 1rem;
     }
 
+    .top-announcement {
+        flex-direction: column;
+        padding: 0.4rem 0.5rem;
+        height: auto;
+    }
+
+    .visit-counter-badge {
+        margin-left: 0;
+        margin-top: 0.25rem;
+    }
+
+    .brand-logo .logo-badge {
+        font-size: 0.9rem;
+        padding: 0.1rem 0.35rem;
+    }
+
     .brand-logo .logo-text {
-        font-size: 1.05rem;
+        font-size: 1rem;
     }
 
     .hero-title {
-        font-size: 2.3rem;
+        font-size: clamp(2rem, 9vw, 3.2rem);
     }
 
     .hero-subtitle {
-        font-size: 1.15rem;
+        font-size: clamp(1.1rem, 4.5vw, 1.4rem);
+    }
+
+    .hero-description {
+        font-size: 0.95rem;
+    }
+
+    .principle-chip {
+        font-size: 0.72rem;
+        padding: 0.3rem 0.6rem;
+    }
+
+    .hero-ctas {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .hero-ctas .btn-primary, .hero-ctas .btn-secondary {
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .poster-image-hero {
+        max-height: 440px;
+    }
+
+    .title-large {
+        font-size: clamp(2.2rem, 8vw, 3.2rem);
+    }
+
+    .featured-grid {
+        grid-template-columns: 1fr;
+        gap: 1.25rem;
+    }
+
+    .demand-card {
+        padding: 1.25rem 1rem;
+    }
+
+    .demand-number {
+        font-size: 2.2rem;
+    }
+
+    .demand-title {
+        font-size: 1.35rem;
+    }
+
+    .timeline-container::before {
+        left: 12px;
+    }
+
+    .timeline-item {
+        padding-left: 2.25rem;
+        margin-bottom: 1.75rem;
+    }
+
+    .timeline-dot {
+        left: 3px;
+        width: 16px;
+        height: 16px;
+    }
+
+    .timeline-content {
+        padding: 1rem 0.85rem;
+    }
+
+    .timeline-title {
+        font-size: 1.3rem;
+    }
+
+    .medical-panel-card {
+        padding: 1.25rem 1rem;
+    }
+
+    .question-item-card {
+        padding: 1rem 0.85rem;
+        gap: 0.75rem;
+    }
+
+    .q-num {
+        font-size: 1.5rem;
+    }
+
+    .q-text {
+        font-size: 0.95rem;
+    }
+
+    .official-response-card {
+        padding: 1.25rem 1rem;
+    }
+
+    .response-notice-text {
+        font-size: 1rem;
+    }
+
+    .press-card {
+        padding: 1.25rem 1rem;
+    }
+
+    .event-card {
+        padding: 1.25rem 1rem;
     }
 
     .archive-controls {
@@ -1864,17 +1982,51 @@ body.menu-open {
         min-width: 100%;
     }
 
-    .demands-grid {
-        grid-template-columns: 1fr;
+    /* Prevent iOS Safari Input Zoom on Phone */
+    input[type="text"], input[type="email"], select, textarea {
+        font-size: 16px !important;
     }
 
-    .demand-card {
-        padding: 1.25rem 1rem;
-    }
-
-    .btn-primary, .btn-secondary {
+    .btn-primary, .btn-secondary, .btn-large {
         width: 100%;
         justify-content: center;
+        padding: 0.75rem 1rem;
+        font-size: 0.9rem;
+    }
+
+    .footer-top {
+        grid-template-columns: 1fr;
+        gap: 1.75rem;
+    }
+}
+
+/* Ultra-Small Phones (<380px, e.g. iPhone SE / Fold collapsed) */
+@media (max-width: 380px) {
+    .container {
+        padding: 0 0.75rem;
+    }
+
+    .brand-logo .logo-badge {
+        font-size: 0.8rem;
+        padding: 0.1rem 0.3rem;
+    }
+
+    .brand-logo .logo-text {
+        font-size: 0.9rem;
+    }
+
+    .pie-chart {
+        width: 170px;
+        height: 170px;
+    }
+
+    .pie-chart-center {
+        width: 96px;
+        height: 96px;
+    }
+
+    .pie-chart-center .center-val {
+        font-size: 1.8rem;
     }
 }
 
