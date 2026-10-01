@@ -456,16 +456,31 @@ img {
     position: relative;
     border: 2px solid var(--border-highlight);
     background-color: var(--bg-card);
-    padding: 0.5rem;
+    padding: 0.6rem;
     box-shadow: 8px 8px 0px var(--brand-red);
     flex-shrink: 0;
-    width: 340px;
+    width: 380px;
     max-width: 45%;
     transition: transform var(--transition-fast);
 }
 
 .hero-media-frame:hover {
     transform: translateY(-2px);
+}
+
+.media-badge-bar {
+    background-color: var(--brand-red);
+    color: #FFFFFF;
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    font-weight: 700;
+    padding: 0.4rem 0.6rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    text-align: center;
+    margin-bottom: 0.6rem;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .media-tabs {
@@ -497,7 +512,7 @@ img {
 .poster-image-hero {
     width: 100%;
     height: auto;
-    max-height: 380px;
+    max-height: 480px;
     object-fit: contain;
     display: block;
     border: 1px solid var(--border-color);
@@ -1690,8 +1705,6 @@ body.menu-open {
     .mobile-toggle.active span:nth-child(3) {
         transform: translateY(-8px) rotate(-45deg);
     }
-}
-
     .hero-section {
         padding: 2.5rem 0 3.5rem 0;
     }
@@ -1701,8 +1714,8 @@ body.menu-open {
     }
 
     .hero-media-frame {
-        width: 280px;
-        max-width: 40%;
+        width: 320px;
+        max-width: 42%;
     }
 
     .hero-title {
@@ -1729,11 +1742,6 @@ body.menu-open {
         justify-content: center;
         text-align: center;
         padding: 0.8rem 1rem;
-    }
-
-    .hero-media-frame {
-        padding: 0.75rem;
-        box-shadow: 6px 6px 0px var(--brand-red);
     }
 
     .section-title {
@@ -1863,16 +1871,23 @@ body.menu-open {
     }
 }
 
-@media (max-width: 640px) {
+@media (max-width: 768px) {
     .hero-header-row {
         flex-direction: column;
-        align-items: flex-start;
+        align-items: stretch;
         gap: 1.5rem;
     }
 
     .hero-media-frame {
         width: 100%;
-        max-width: 320px;
+        max-width: 100%;
+        box-shadow: 6px 6px 0px var(--brand-red);
+        padding: 0.5rem;
+    }
+
+    .poster-image-hero {
+        max-height: none;
+        width: 100%;
     }
 }
 
