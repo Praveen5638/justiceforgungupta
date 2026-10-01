@@ -502,7 +502,7 @@ function initCopyAllDemands() {
 
         navigator.clipboard.writeText(fullTextToCopy).then(() => {
             const originalText = copyBtn.innerText;
-            copyBtn.innerText = 'COPIED ALL 6 DEMANDS ✓';
+            copyBtn.innerText = 'COPIED ALL 7 DEMANDS ✓';
             copyBtn.style.backgroundColor = '#2ecc71';
             copyBtn.style.borderColor = '#2ecc71';
 

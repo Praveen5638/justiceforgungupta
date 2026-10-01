@@ -85,6 +85,15 @@ const CAMPAIGN_DATA = {
             shortDesc: "मामले की समीक्षा या जाँच से संबंधित उचित आधिकारिक जानकारी समय पर साझा की जाए। जहाँ आवश्यक हो, सुधारात्मक कदमों और जवाबदेही की प्रक्रिया स्पष्ट की जाए।",
             detailedDesc: "छात्रों द्वारा प्रस्तुत ज्ञापन पर उठाये गए कदमों, प्रशासनिक सुधारों की समय-सीमा तथा ढांचागत सुधारों की जानकारी सार्वजनिक की जाए, जिससे व्यक्तिगत गोपनीयता का सम्मान करते हुए पूर्ण संस्थागत जवाबदेही सुनिश्चित हो सके।",
             icon: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>`
+        },
+        {
+            id: "demand-7",
+            number: "07",
+            title: "REASONABLE COLLEGE HOURS",
+            status: "SUBMITTED",
+            shortDesc: "कॉलेज के <strong style=\"color: var(--brand-red);\">8 घंटे</strong> के दैनिक समय को घटाकर <strong style=\"color: var(--signal-yellow);\">5–5.5 घंटे</strong> किया जाए, ताकि विद्यार्थियों को पढ़ाई, स्वास्थ्य, आराम और व्यक्तिगत विकास के लिए पर्याप्त समय मिल सके।",
+            detailedDesc: "वर्तमान 8 घंटे के दैनिक कॉलेज समय को घटाकर 5 से 5.5 घंटे किया जाए। विद्यार्थियों के मानसिक एवं शारीरिक स्वास्थ्य, स्व-अध्ययन, पर्याप्त विश्राम और व्यक्तिगत विकास को ध्यान में रखते हुए कॉलेज का समय संतुलित और व्यावहारिक बनाया जाए। साथ ही, समय-सारणी में आवश्यक ब्रेक और पर्याप्त विश्राम का प्रावधान हो।",
+            icon: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>`
         }
     ],
 
@@ -170,7 +179,7 @@ const CAMPAIGN_DATA = {
             lastReviewed: "2026-09-30",
             source: "Regional Media & Documented Student Outpour",
             sourceLink: "#",
-            description: "छात्रों ने परिसर के बाहर शांतिपूर्वक एकत्र होकर मोमबत्तियाँ जलाईं, संवेदना व्यक्त की तथा चिकित्सा अवकाश नीति और छात्र कल्याण सुविधाओं पर पारदर्शिता की माँग की।",
+            description: "छात्रों ने परिसर के बाहर शांतिपूर्वक एकत्र होकर मोमबत्तियाँ जलाईं, संवेदना व्यक्त की तथा चिकित्सा अवकाश नीति, कॉलेज समय सुधार और छात्र कल्याण सुविधाओं पर पारदर्शिता की माँग की।",
             note: "नोट: प्रत्यक्षदर्शियों के शांतिपूर्ण खातों को बिना किसी भड़काऊ भाषा के दर्ज किया गया है।"
         },
         {
@@ -182,7 +191,7 @@ const CAMPAIGN_DATA = {
             lastReviewed: "2026-10-01",
             source: "Campaign Organizing Committee",
             sourceLink: "#",
-            description: "छात्र समन्वय समिति द्वारा 6-सूत्रीय ज्ञापन को अंतिम रूप दिया गया तथा निष्पक्ष जाँच एवं चिकित्सा सम्मान की माँग हेतु गेट नं. 2 से शांतिपूर्ण मार्च का आयोजन किया गया।",
+            description: "छात्र समन्वय समिति द्वारा 7-सूत्रीय ज्ञापन को अंतिम रूप दिया गया तथा निष्पक्ष जाँच एवं चिकित्सा सम्मान की माँग हेतु गेट नं. 2 से शांतिपूर्ण मार्च का आयोजन किया गया।",
             note: "नोट: सभी अभियान अपडेट सत्यापनीय स्रोतों पर आधारित हैं।"
         }
     ],
@@ -231,11 +240,11 @@ const CAMPAIGN_DATA = {
         {
             id: "doc-2",
             category: "statements",
-            title: "6-Point Student Charter of Demands",
+            title: "7-Point Student Charter of Demands",
             authority: "Justice for Gun Gupta Campaign Committee",
             date: "30 September 2026",
             type: "STUDENT STATEMENTS",
-            summary: "पारदर्शी जाँच, चिकित्सा सम्मान, स्वास्थ्य सुरक्षा ऑडिट और छात्र संरक्षण की माँग करने वाला औपचारिक 6-सूत्रीय ज्ञापन।",
+            summary: "पारदर्शी जाँच, चिकित्सा सम्मान, कॉलेज समय सुधार (5-5.5 घंटे), स्वास्थ्य सुरक्षा ऑडिट और छात्र संरक्षण की माँग करने वाला औपचारिक 7-सूत्रीय ज्ञापन।",
             link: "#",
             lastReviewed: "2026-09-30"
         },
@@ -265,10 +274,10 @@ const CAMPAIGN_DATA = {
 
     pressKit: {
         hindiReleaseTitle: "प्रेस विज्ञप्ति: गुण गुप्ता मामले में निष्पक्ष जाँच और छात्र स्वास्थ्य सुरक्षा की माँग",
-        hindiReleaseBody: "प्रयागराज, 01 अक्टूबर 2026: यूनाइटेड कॉलेज ऑफ इंजीनियरिंग एंड रिसर्च (UCER) की छात्रा गुण गुप्ता के दुखद निधन के पश्चात छात्रों ने 6-सूत्रीय ज्ञापन सौंपकर निष्पक्ष जाँच, पारदर्शी चिकित्सा अवकाश नीति और छात्र सुरक्षा ऑडिट की माँग की है...",
+        hindiReleaseBody: "प्रयागराज, 01 अक्टूबर 2026: यूनाइटेड कॉलेज ऑफ इंजीनियरिंग एंड रिसर्च (UCER) की छात्रा गुण गुप्ता के दुखद निधन के पश्चात छात्रों ने 7-सूत्रीय ज्ञापन सौंपकर निष्पक्ष जाँच, पारदर्शी चिकित्सा अवकाश नीति, कॉलेज समय में सुधार (5–5.5 घंटे) और छात्र सुरक्षा ऑडिट की माँग की है...",
         englishReleaseTitle: "PRESS RELEASE: Students Demand Impartial Inquiry & Medical Leave Safeguards",
-        englishReleaseBody: "PRAYAGRAJ, 01 OCTOBER 2026: Following the reported passing of third-year B.Tech CSE student Gun Gupta, student representatives have submitted a formal 6-point memorandum seeking an independent inquiry and transparent medical leave guidelines...",
-        summaryOnePager: "यह एक पृष्ठ का तथ्य-पत्रक गुण गुप्ता मामले से जुड़ी प्रामाणिक जानकारी, मुख्य माँगों और सत्यापनीय कालानुक्रमिक विवरण का संक्षिप्त सार प्रस्तुत करता है।",
+        englishReleaseBody: "PRAYAGRAJ, 01 OCTOBER 2026: Following the reported passing of third-year B.Tech CSE student Gun Gupta, student representatives have submitted a formal 7-point memorandum seeking an independent inquiry, reasonable college hours (5–5.5 hours), and transparent medical leave guidelines...",
+        summaryOnePager: "यह एक पृष्ठ का तथ्य-पत्रक गुण गुप्ता मामले से जुड़ी प्रामाणिक जानकारी, मुख्य 7 माँगों और सत्यापनीय कालानुक्रमिक विवरण का संक्षिप्त सार प्रस्तुत करता है।",
         downloadablePdfNotice: "मीडिया प्रतिनिधि एवं शोधकर्ता यहाँ से अभियान का आधिकारिक प्रेस किट, ज्ञापन एवं समय-रेखा दस्तावेज डाउनलोड कर सकते हैं।"
     },
 
@@ -285,7 +294,7 @@ const CAMPAIGN_DATA = {
             id: "upd-2",
             date: "30 September 2026 — 08:00 PM IST",
             title: "Student Memorandum Finalized for Submission",
-            body: "उपस्थिति निष्पक्षता, चिकित्सा अवकाश सुरक्षा और परिसर स्वास्थ्य सुविधाओं से सम्बन्धित 6-सूत्रीय ज्ञापन को अंतिम रूप दे दिया गया है।",
+            body: "उपस्थिति निष्पक्षता, कॉलेज समय सुधार (5–5.5 घंटे), चिकित्सा अवकाश सुरक्षा और परिसर स्वास्थ्य सुविधाओं से सम्बन्धित 7-सूत्रीय ज्ञापन को अंतिम रूप दे दिया गया है।",
             status: "VERIFIED",
             source: "Student Steering Committee"
         },
@@ -293,7 +302,7 @@ const CAMPAIGN_DATA = {
             id: "upd-3",
             date: "30 September 2026 — 02:00 PM IST",
             title: "Reported Preliminary Dialogue",
-            body: "प्राप्त विवरणों के अनुसार छात्र प्रतिनिधियों और प्रशासन के बीच उपस्थिति दिशा-निर्देशों की समीक्षा हेतु प्रारंभिक वार्ता हुई है।",
+            body: "प्राप्त विवरणों के अनुसार छात्र प्रतिनिधियों और प्रशासन के बीच उपस्थिति दिशा-निर्देशों एवं दैनिक कॉलेज समय की समीक्षा हेतु प्रारंभिक वार्ता हुई है।",
             status: "STUDENT-REPORTED",
             source: "Student Assembly Representatives"
         }
