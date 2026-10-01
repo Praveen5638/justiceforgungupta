@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <rect width="1200" height="630" fill="#080808"/>
+  <!-- Top Red Accent Bar -->
+  <rect width="1200" height="16" fill="#E3262E"/>
+  
+  <!-- Background Diagonal Texture -->
+  <g opacity="0.04" stroke="#FFFFFF" stroke-width="2">
+    <line x1="0" y1="0" x2="1200" y2="630"/>
+    <line x1="200" y1="0" x2="1200" y2="500"/>
+    <line x1="0" y1="200" x2="1000" y2="630"/>
+  </g>
+
+  <!-- Tagline Pill -->
+  <rect x="80" y="80" width="460" height="40" fill="#E3262E" rx="4"/>
+  <text x="100" y="106" font-family="'Inter', sans-serif" font-size="18" font-weight="700" fill="#FFFFFF" letter-spacing="2">INDEPENDENT STUDENT ADVOCACY</text>
+
+  <!-- Main Headline -->
+  <text x="80" y="230" font-family="'Bebas Neue', 'Oswald', sans-serif" font-size="96" font-weight="700" fill="#F5F0E7" letter-spacing="4">JUSTICE FOR <tspan fill="#E3262E">GUN GUPTA</tspan></text>
+  
+  <!-- Subtitle -->
+  <text x="80" y="300" font-family="'Bebas Neue', sans-serif" font-size="44" font-weight="700" fill="#FFD43B" letter-spacing="2">STUDENTS ARE NOT MACHINES.</text>
+
+  <!-- Descriptive Subtext -->
+  <text x="80" y="380" font-family="'Inter', sans-serif" font-size="24" fill="#C2BBB0">Case Timeline, Sourced Records &amp; Institutional Accountability</text>
+  <text x="80" y="420" font-family="'Inter', sans-serif" font-size="22" fill="#8E8880">UCER / UIT / United Group of Institutions • Prayagraj, Uttar Pradesh</text>
+
+  <!-- Bottom Badges -->
+  <g transform="translate(80, 490)">
+    <rect x="0" y="0" width="220" height="44" fill="#181818" stroke="#2D2A26" stroke-width="2" rx="4"/>
+    <text x="20" y="27" font-family="'JetBrains Mono', monospace" font-size="15" font-weight="700" fill="#2ECC71">■ VERIFIED SOURCES</text>
+    
+    <rect x="240" y="0" width="250" height="44" fill="#181818" stroke="#2D2A26" stroke-width="2" rx="4"/>
+    <text x="260" y="27" font-family="'JetBrains Mono', monospace" font-size="15" font-weight="700" fill="#FFD43B">■ ATTENDANCE POLICY 75%</text>
+
+    <rect x="510" y="0" width="230" height="44" fill="#181818" stroke="#2D2A26" stroke-width="2" rx="4"/>
+    <text x="530" y="27" font-family="'JetBrains Mono', monospace" font-size="15" font-weight="700" fill="#E3262E">■ MEDICAL DIGNITY</text>
+  </g>
+
+  <!-- Footer Watermark -->
+  <line x1="80" y1="570" x2="1120" y2="570" stroke="#2D2A26" stroke-width="2"/>
+  <text x="80" y="600" font-family="'JetBrains Mono', monospace" font-size="14" fill="#8E8880">FAIR INQUIRY • TRANSPARENCY • PRAYAGRAJ, INDIA</text>
+</svg>

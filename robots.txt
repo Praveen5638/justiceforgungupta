@@ -1,0 +1,11 @@
+# Robots.txt for Justice for Gun Gupta Campaign Website
+# https://praveen5638.github.io/justiceforgungupta/robots.txt
+
+User-agent: *
+Allow: /
+
+# Exclude temporary or scratch directories if present
+Disallow: /scratch/
+
+# Sitemap directive
+Sitemap: https://praveen5638.github.io/justiceforgungupta/sitemap.xml
