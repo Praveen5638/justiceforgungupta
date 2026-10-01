@@ -349,17 +349,24 @@ img {
     background: radial-gradient(circle at 80% 20%, rgba(227, 38, 46, 0.08) 0%, transparent 60%);
 }
 
-.hero-grid {
-    display: grid;
-    grid-template-columns: 1.2fr 0.8fr;
-    gap: 3.5rem;
-    align-items: center;
-}
-
-.hero-content {
+.hero-container {
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
+    gap: 2.5rem;
+}
+
+.hero-header-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 3rem;
+}
+
+.hero-title-area {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
 }
 
 .hero-tagline {
@@ -379,7 +386,7 @@ img {
 
 .hero-title {
     font-family: var(--font-heading);
-    font-size: clamp(3.2rem, 7vw, 6rem);
+    font-size: clamp(3.2rem, 7vw, 5.5rem);
     line-height: 0.95;
     letter-spacing: 0.02em;
     text-transform: uppercase;
@@ -399,10 +406,16 @@ img {
     text-transform: uppercase;
 }
 
+.hero-lower-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    max-width: 800px;
+}
+
 .hero-description {
     font-size: 1.15rem;
     color: var(--text-secondary);
-    max-width: 600px;
     line-height: 1.7;
 }
 
@@ -410,7 +423,7 @@ img {
     display: flex;
     flex-wrap: wrap;
     gap: 0.75rem;
-    margin-top: 0.5rem;
+    margin-top: 0.25rem;
 }
 
 .principle-chip {
@@ -435,16 +448,24 @@ img {
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
-    margin-top: 1rem;
+    margin-top: 0.5rem;
 }
 
-/* Editorial Photo Frame & Poster Image */
+/* Editorial Photo Frame & Poster Image placed right beside JUSTICE FOR GUN GUPTA */
 .hero-media-frame {
     position: relative;
     border: 2px solid var(--border-highlight);
     background-color: var(--bg-card);
-    padding: 0.75rem;
-    box-shadow: 12px 12px 0px var(--brand-red);
+    padding: 0.5rem;
+    box-shadow: 8px 8px 0px var(--brand-red);
+    flex-shrink: 0;
+    width: 340px;
+    max-width: 45%;
+    transition: transform var(--transition-fast);
+}
+
+.hero-media-frame:hover {
+    transform: translateY(-2px);
 }
 
 .media-tabs {
@@ -476,7 +497,7 @@ img {
 .poster-image-hero {
     width: 100%;
     height: auto;
-    max-height: 580px;
+    max-height: 380px;
     object-fit: contain;
     display: block;
     border: 1px solid var(--border-color);
@@ -1565,7 +1586,7 @@ html, body {
 }
 
 @media (max-width: 1024px) {
-    .hero-grid, .case-grid, .policy-layout, .solidarity-wrapper, .contact-grid {
+    .case-grid, .policy-layout, .solidarity-wrapper, .contact-grid {
         grid-template-columns: 1fr;
         gap: 2.5rem;
     }
@@ -1675,13 +1696,17 @@ body.menu-open {
         padding: 2.5rem 0 3.5rem 0;
     }
 
-    .hero-grid {
-        grid-template-columns: 1fr;
-        gap: 2rem;
+    .hero-header-row {
+        gap: 1.5rem;
+    }
+
+    .hero-media-frame {
+        width: 280px;
+        max-width: 40%;
     }
 
     .hero-title {
-        font-size: clamp(2.6rem, 11vw, 4rem);
+        font-size: clamp(2.4rem, 8vw, 3.8rem);
     }
 
     .hero-subtitle {
@@ -1835,6 +1860,19 @@ body.menu-open {
     .footer-top {
         grid-template-columns: 1fr;
         gap: 2rem;
+    }
+}
+
+@media (max-width: 640px) {
+    .hero-header-row {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1.5rem;
+    }
+
+    .hero-media-frame {
+        width: 100%;
+        max-width: 320px;
     }
 }
 
